@@ -20,7 +20,7 @@ serde = {version="^1.0", features=["derive"]}
 #mfcc = {git="https://github.com/sheosi/mfcc"}
 #mfcc = {path="../mfcc", default-features=false, features=["fftextern"]}
 #mfcc = {path="../mfcc"}
-mfcc-2 = {git="https://github.com/secretsauceai/mfcc-rust", optional = true}
+speechsauce = {git="https://github.com/secretsauceai/mfcc-rust", optional = true}
 
 [dev-dependencies]
 hound = "^3.4"
@@ -34,4 +34,4 @@ harness = false
 
 [features]
 default = ["new-mfcc"]
-new-mfcc = ["mfcc-2"]
+new-mfcc = ["speechsauce"]
