@@ -17,7 +17,7 @@ ndarray = "^0.15"
 thiserror = "^1.0"
 serde_json = "^1.0"
 serde = {version="^1.0", features=["derive"]}
-#mfcc = {git="https://github.com/sheosi/mfcc"}
+mfcc = {git="https://github.com/sheosi/mfcc"}
 #mfcc = {path="../mfcc", default-features=false, features=["fftextern"]}
 #mfcc = {path="../mfcc"}
 speechsauce = {git="https://github.com/secretsauceai/mfcc-rust", optional = true}
