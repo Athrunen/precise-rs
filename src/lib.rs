@@ -9,7 +9,7 @@ use serde::{Deserialize, Serialize};
 #[cfg(not(feature="new-mfcc"))]
 use mfcc::Transform;
 #[cfg(feature="new-mfcc")]
-use mfcc_2::mfcc;
+use speechsauce::mfcc;
 
 use ndarray::{Array1, Array2, Axis, concatenate, s};
 use tflite::ops::builtin::BuiltinOpResolver;
