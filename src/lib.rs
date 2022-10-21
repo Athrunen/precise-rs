@@ -209,7 +209,7 @@ impl Precise {
         let x = Array1::from_iter(
         raw.into_iter().map(|i| *i as f64));
 
-        mfcc(x.view(), params.sample_rate, params.window_samples(), params.hop_samples(), params.n_mfcc, params.n_filt, 512, 0, None, true).mapv(|f|f as f32)
+        mfcc(x.view(), params.sample_rate, params.window_samples() as f64, params.hop_samples() as f64, params.n_mfcc, params.n_filt, 512, 0, None, true).mapv(|f|f as f32)
     }
 
     fn vectorize_raw(raw: &[i16], params: &PreciseParams) -> Array2<f32> {
